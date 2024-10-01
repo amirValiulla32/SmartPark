@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Park</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <!-- Updated Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Smart Park</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#parking-lots">Parking Lots</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2>Welcome to Smart Park</h2>
+            <p>Find your spot, fast and easy.</p>
+            <a href="#parking-lots" class="cta-button">Explore Parking Lots</a>
+        </div>
+    </section>
+
+    <!-- Parking Lots Section -->
+    <section id="parking-lots" class="dynamic-section">
+        <h2>Parking Lot Availability</h2>
+        <div id="parking-data" class="lots-container">
+            <!-- Parking lots will be dynamically inserted here by JavaScript -->
+        </div>
+    </section>
+    
+    
+
+    <!-- About Section -->
+    <section id="about" class="dynamic-section">
+        <h2>About Smart Park</h2>
+        <p>Smart Park is a parking management solution designed to make finding a parking spot fast and efficient...</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="dynamic-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us...</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Smart Park. All rights reserved.</p>
+    </footer>
+</body>
+</html>
